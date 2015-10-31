@@ -164,7 +164,7 @@ class Qidian():
                 path = u"c:\\起点小说\\%s" % book['title']
                 #如果不存在目录，则创建。
                 if not(os.path.exists(path)):
-                    os.mkdir(path)
+                    os.mkdirs(path)
 
 
                 filename = u"c:\\起点小说\\%s\\%s.txt" % (book['title'],chapter['title'])
